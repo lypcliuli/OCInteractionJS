@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div style="margin-top: 100px">
+            <h1>Objective-C和JavaScript交互</h1>
+        </div>
+        
+        <div>
+            <input type="button" value="oc掉用js弹出提示->" onclick="clickAction0(11)">
+            <input type="button" value="js调用oc->" onclick="clickbtn()">
+        </div>
+        
+        <script type="text/javascript">
+            // js函数
+            function clickAction0(typyId) {
+                alert(typyId)
+            }
+            function clickAction1(typyId) {
+                alert(typyId)
+            }
+            function clickAction2(typyId) {
+                alert(typyId);
+                return 'hello';
+            }
+            function clickbtn() {
+                var tempValue = window.AndroidWebView.indexOfMap();
+                alert(tempValue);
+            }
+            </script>
+    </body>
+</html>
